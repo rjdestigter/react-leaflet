@@ -6063,6 +6063,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        if (!existing) {
 	          map.createPane(name, this.getParentPane());
+	          this.paneName = name;
 	        } else {
 	          if (isDefault) {
 	            throw new Error('You must use a unique name for a pane that is not a default leaflet pane (' + name + ')');
@@ -6087,16 +6088,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'removePane',
 	    value: function removePane() {
 	      // Remove the created pane
-	      if (this.state.name) {
-	        var pane = this.getPane();
+	      if (this.paneName) {
+	        var pane = this.getPane(this.paneName);
 	        pane && pane.remove && pane.remove();
 
 	        var map = this.context.map || this.props.map;
 
 	        if (map && map._panes) {
-	          map._panes = (0, _omit3.default)(map._panes, this.state.name);
-	          map._paneRenderers = (0, _omit3.default)(map._paneRenderers, this.state.name);
+	          map._panes = (0, _omit3.default)(map._panes, this.paneName);
+	          map._paneRenderers = (0, _omit3.default)(map._paneRenderers, this.paneName);
 	        }
+
+	        this.paneName = null;
 	      }
 	    }
 
@@ -6165,9 +6168,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    /**
-	     * getChildren - Returns a clone of any children with props passed down unless
-	     * the child is an instance of Pane as well in which case the child is returned
-	     * as is.
+	     * getChildren - Returns this.props.children
 	     *
 	     * @returns {node}  Component children
 	     */
@@ -6175,15 +6176,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'getChildren',
 	    value: function getChildren() {
-	      var _this2 = this;
-
-	      return _react2.default.Children.map(this.props.children, function (child) {
-	        if (child.type === Pane) {
-	          return child;
-	        }
-
-	        return child ? _react2.default.cloneElement(child, _this2.props) : null;
-	      });
+	      return this.props.children;
 	    }
 	  }, {
 	    key: 'render',
