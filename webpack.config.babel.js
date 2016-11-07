@@ -15,10 +15,10 @@ const config = {
   },
   externals: [
     {
-      leaflet: {
-        amd: 'leaflet',
-        commonjs: 'leaflet',
-        commonjs2: 'leaflet',
+      'leaflet-077': {
+        amd: 'leaflet-077',
+        commonjs: 'leaflet-077',
+        commonjs2: 'leaflet-077',
         root: 'L',
       },
     },

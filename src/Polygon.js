@@ -1,6 +1,6 @@
 /* @flow */
 
-import { polygon } from 'leaflet'
+import { polygon } from 'leaflet-077'
 import { PropTypes } from 'react'
 
 import latlngListType from './types/latlngList'

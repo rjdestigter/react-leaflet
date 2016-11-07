@@ -1,6 +1,6 @@
 /* @flow */
 
-import { circleMarker } from 'leaflet'
+import { circleMarker } from 'leaflet-077'
 import { PropTypes } from 'react'
 
 import latlngType from './types/latlng'

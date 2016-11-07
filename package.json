@@ -14,14 +14,13 @@
     "test": "jest",
     "onchange": "onchange 'src/*.js' 'src/**/*.js' -- npm run lintAndTest",
     "dev": "npm run watch & npm run onchange",
-    "prepublish": "npm ls && npm start",
     "examples": "webpack-dev-server --config ./example/webpack.config.babel.js",
     "lint": "eslint ./src",
     "lintAndTest": "npm run lint && jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PaulLeCam/react-leaflet.git"
+    "url": "https://github.com/rjdestgter/react-leaflet.git"
   },
   "keywords": [
     "react-component",
@@ -40,7 +39,7 @@
     "warning": "^3.0.0"
   },
   "peerDependencies": {
-    "leaflet": "^0.7.0",
+    "leaflet-077": "git+https://github.com/rjdestigter/Leaflet.git#leaflet-077",
     "react": "^0.14.0 || ^15.0.0",
     "react-dom": "^0.14.0 || ^15.0.0"
   },
@@ -64,7 +63,7 @@
     "eslint-plugin-react": "^6.3.0",
     "eslint-plugin-standard": "^2.0.0",
     "jest-cli": "^15.1.1",
-    "leaflet": "^0.7.7",
+    "leaflet-077": "git+https://github.com/rjdestigter/Leaflet.git#leaflet-077",
     "lodash-webpack-plugin": "^0.10.1",
     "onchange": "^3.0.2",
     "react": "^15.3.2",

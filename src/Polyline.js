@@ -1,6 +1,6 @@
 /* @flow */
 
-import { polyline } from 'leaflet'
+import { polyline } from 'leaflet-077'
 
 import latlngListType from './types/latlngList'
 import Path from './Path'

@@ -1,6 +1,6 @@
 /* @flow */
 
-import { popup } from 'leaflet'
+import { popup } from 'leaflet-077'
 import { Children, PropTypes } from 'react'
 import { render, unmountComponentAtNode } from 'react-dom'
 

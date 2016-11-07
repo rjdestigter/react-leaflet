@@ -1,6 +1,6 @@
 /* @flow */
 
-import { control } from 'leaflet'
+import { control } from 'leaflet-077'
 import { PropTypes } from 'react'
 
 import MapControl from './MapControl'

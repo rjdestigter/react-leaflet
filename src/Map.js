@@ -1,8 +1,8 @@
 /* @flow */
 /* eslint-disable react/no-did-mount-set-state */
 
-import Leaflet from 'leaflet'
-import type { LatLng, LatLngBounds } from 'leaflet'
+import Leaflet from 'leaflet-077'
+import type { LatLng, LatLngBounds } from 'leaflet-077'
 import { isUndefined, omit, uniqueId } from 'lodash'
 import React, { PropTypes } from 'react'
 

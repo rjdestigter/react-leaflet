@@ -1,6 +1,6 @@
 /* @flow */
 
-import { layerGroup } from 'leaflet'
+import { layerGroup } from 'leaflet-077'
 
 import layerContainerType from './types/layerContainer'
 import MapLayer from './MapLayer'

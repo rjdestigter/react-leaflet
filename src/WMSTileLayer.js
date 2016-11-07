@@ -1,6 +1,6 @@
 /* @flow */
 
-import { tileLayer } from 'leaflet'
+import { tileLayer } from 'leaflet-077'
 import { PropTypes } from 'react'
 
 import BaseTileLayer from './BaseTileLayer'

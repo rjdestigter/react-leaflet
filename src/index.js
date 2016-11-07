@@ -1,4 +1,4 @@
-import Leaflet from 'leaflet'
+import Leaflet from 'leaflet-077'
 
 export * as PropTypes from './types'
 

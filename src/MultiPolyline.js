@@ -1,6 +1,6 @@
 /* @flow */
 
-import { multiPolyline } from 'leaflet'
+import { multiPolyline } from 'leaflet-077'
 import { PropTypes } from 'react'
 
 import latlngListType from './types/latlngList'
